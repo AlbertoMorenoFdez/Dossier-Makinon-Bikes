@@ -1,0 +1,55 @@
+.section3{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #faa134;
+}
+
+.section3_left{
+    grid-column: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.section3_right{
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.section3_right .titulo{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    margin: 0.5rem;
+}
+
+.section3_right_medium .contenido {
+    list-style-type: disc;
+    margin: 0.5em;
+    padding-left: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+}
+
+.section3_right_bottom .conclusion{
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.section3_right_bottom .conclusion img{
+    width: 20%;
+    height: 20%;
+    object-fit: contain;
+    object-position: center;
+}
+
