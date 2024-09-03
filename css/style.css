@@ -19,3 +19,13 @@ body{
     
 }
 
+.section11 {
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
