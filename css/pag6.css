@@ -1,0 +1,71 @@
+.section6 {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+        "area1 area2 area3"
+        "area4 area5 area6"
+        "area7 area8 area9";
+    background-image: url(../images/iker.jpeg);
+    background-size: cover;
+}
+
+.section6_left_top {
+    grid-area: area1;
+    display: flex;
+    justify-content: center;
+}
+
+.section6_left_top .titulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #faa134;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 4rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.section6_left_bottom {
+    grid-area: area7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.section6_left_bottom .nombre_corredor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #faa134;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 4rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.section6_right_top {
+    margin-left: 26rem;
+    grid-column: 2/3; /* Coloca el div en la columna 3 */
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 120%; /* Asegura que el div no desborde su columna */
+}
+
+.section6_right_top .logros {
+    padding: 1rem;;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Centra el contenido dentro del div */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1.3rem;
+    width: 120%; /* Asegura que el contenido ocupe todo el ancho disponible */
+}
