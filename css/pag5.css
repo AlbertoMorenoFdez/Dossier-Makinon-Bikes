@@ -20,6 +20,7 @@
     display: flex;
     justify-content: center;
     align-items:flex-start;
+    margin-top: 0.5rem;
 }
 
 .section5_left_top img {
@@ -60,6 +61,7 @@
     color: #faa134;
     font-family: 'Montserrat', sans-serif;
     font-size: 3rem;
+    margin-top: 0.5rem;
 }
 
 .section5_middle_center {
@@ -95,6 +97,7 @@
     display: flex;
     justify-content: center;
     align-items:flex-start;
+    margin-top: 0.5rem;
 }
 
 .section5_right_top img {

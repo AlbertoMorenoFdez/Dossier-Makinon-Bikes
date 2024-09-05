@@ -1,5 +1,6 @@
 .section7 {
     position: relative;
+    width: 100%;
     height: 100vh;
     background-image: url('../images/logo_sin_fondo.gif');
     background-size: cover;
@@ -131,9 +132,7 @@
         grid-template-areas:
             "organigrama organigrama"
             "presi secre"
-            
             "dirdep2 dirdep3"
-            
             "mtbnac mtband"
             "femnac club";
             
@@ -145,7 +144,7 @@
     }
     
     .presi, .secre, .dirdep2, .dirdep3, .mtbnac, .mtband, .femnac, .club {
-        flex: 1 1 100%; /* Ajusta el ancho de los elementos para que ocupen toda la fila */
+        flex: 1 1 100%;
         font-size: 0.5rem;
     
     }

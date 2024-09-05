@@ -1,0 +1,113 @@
+.section9{
+    width: 100%;
+    height: 100vh;
+    background-color: #faa134;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.section9_left{
+    display: grid;
+    grid-template-rows: 0.2fr 1fr;
+}
+
+.section9_left_top{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    background-color: white;
+    color:#faa134;
+    padding-left: 1rem;
+}
+
+.section9_left_top .titulo{
+    font-size: 3rem;
+}
+
+.section9_left_top .subtitulo{
+    font-size: 2rem;
+}
+
+.section9_left_bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+.section9 table{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    margin: 0.5rem;
+}
+
+.section9 table th.concepto {
+    text-align: left;
+    padding-left: 1rem;
+}
+
+.section9 table th.importe {
+    text-align: right;
+    padding-left: 2rem;
+    
+}
+
+.section9 table th.concepto_total{
+    text-align: right;
+}
+
+.section9_right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden;
+}
+
+.section9_right .img_container{
+    width: 100%;
+    height: 50%;
+    max-height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.img_container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+@media(max-width: 768px){
+    .section9{
+        display:flex;
+        flex-direction: column;
+    }
+
+    .section9_left_top .titulo{
+        font-size: 2rem;
+    }
+    
+    .section9_left_top .subtitulo{
+        font-size: 1rem;
+    }
+
+    .section9_left_bottom table{
+        font-size: 1rem;
+    }
+
+    .section9_right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section9_right .img_container{
+        display:none;
+    }
+}

@@ -1,0 +1,88 @@
+.section8 {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.section8_top {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.section8_top img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.section8_bottom {
+    position: relative; /* Necesario para posicionar el pseudo-elemento */
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #faa134;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.section8_bottom::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/emblema2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 35%;
+    opacity: 0.2; 
+    z-index: 1;
+}
+
+.section8_bottom > * {
+    position: relative;
+    z-index: 2;
+}
+
+.section8_bottom_left {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    font-size: 3rem;
+    margin-left: 1rem;
+}
+
+.section8 li {
+    font-size: 1.6rem;
+}
+
+@media(max-width:768px){
+    .section8{
+        display:flex;
+        flex-direction: column;
+    }
+
+    .section8_bottom{
+        flex-direction: column; 
+    }
+
+    .section8_bottom_left{
+        font-size: 2rem;
+    }
+
+    .section8_bottom_center, .section8_bottom_right{
+        width: 80%;
+        
+    }
+
+    .section8 li{
+        font-size: 0.8rem;
+    }
+}

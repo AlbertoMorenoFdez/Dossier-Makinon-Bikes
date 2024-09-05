@@ -3,8 +3,8 @@
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    
-    
+
+
 }
 
 .section3_left {
@@ -58,33 +58,29 @@
 @media (max-width: 768px) {
     .section3 {
         grid-template-columns: 1fr;
-        /* Cambia a una sola columna en pantallas pequeñas */
         gap: 0;
     }
 
     .section3_right .titulo {
         font-size: 2rem;
-        /* Reduce el tamaño de la fuente en pantallas pequeñas */
     }
 
     .section3_right_medium .contenido {
         font-size: 1rem;
-        /* Reduce el tamaño de la fuente en pantallas pequeñas */
     }
 
     .section3_right_bottom .conclusion {
         font-size: 1.5rem;
-        /* Reduce el tamaño de la fuente en pantallas pequeñas */
+
         flex-direction: column;
-        /* Cambia la dirección del flex a columna en pantallas pequeñas */
+
         text-align: center;
-        /* Centra el texto */
+
     }
 
     .section3_right_bottom .conclusion img {
         width: 50%;
-        /* Ajusta el tamaño de la imagen en pantallas pequeñas */
         height: auto;
-        /* Mantiene la proporción de la imagen */
+        transform: rotate(90deg);
     }
 }
