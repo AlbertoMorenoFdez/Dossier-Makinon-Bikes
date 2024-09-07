@@ -24,7 +24,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    
+
 }
 
 .section7_container {
@@ -39,13 +39,13 @@
         ". secre secre ."
         "dirdep2 dirdep2 dirdep3 dirdep3"
         "mtbnac mtband femnac club";
-        
+
 }
 
 .organigrama {
     grid-area: organigrama;
     width: 80%;
-    justify-self: center;  
+    justify-self: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -59,14 +59,14 @@
     margin: 0.5rem;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    
+
 }
 
 .presi {
     grid-area: presi;
     flex: 1;
     width: 50%;
-     
+
 }
 
 .secre {
@@ -87,26 +87,29 @@
 
 .mtbnac {
     grid-area: mtbnac;
-    
 }
 
 .mtband {
     grid-area: mtband;
-    
 }
 
 .femnac {
     grid-area: femnac;
-     
 }
 
 .club {
     grid-area: club;
-    
 }
 
-.presi, .secre, .dirdep2, .dirdep3, .mtbnac, .mtband, .femnac, .club {
-    justify-self: center; 
+.presi,
+.secre,
+.dirdep2,
+.dirdep3,
+.mtbnac,
+.mtband,
+.femnac,
+.club {
+    justify-self: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -121,8 +124,16 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.section7_container p{
+.section7_container p {
     text-align: center;
+}
+
+.div-expandable {
+    transition: transform 0.3s ease-in-out;
+}
+
+.div-expanded {
+    transform: scale(1.5);
 }
 
 @media (max-width: 768px) {
@@ -135,17 +146,24 @@
             "dirdep2 dirdep3"
             "mtbnac mtband"
             "femnac club";
-            
+
     }
-    
+
     .organigrama {
         font-size: 1rem;
         flex: 1 1 100%;
     }
-    
-    .presi, .secre, .dirdep2, .dirdep3, .mtbnac, .mtband, .femnac, .club {
+
+    .presi,
+    .secre,
+    .dirdep2,
+    .dirdep3,
+    .mtbnac,
+    .mtband,
+    .femnac,
+    .club {
         flex: 1 1 100%;
         font-size: 0.5rem;
-    
+
     }
 }

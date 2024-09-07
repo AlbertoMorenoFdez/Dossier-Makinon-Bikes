@@ -26,7 +26,6 @@
     align-items: flex-start;
     color: #faa134;
     font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
     font-size: 4rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
@@ -46,18 +45,15 @@
     align-items: flex-start;
     color: #faa134;
     font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
     font-size: 4rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .section6_right_top {
-
     grid-column: 3;
-    /* Coloca el div en la columna 3 */
     display: flex;
     background-color: rgba(255, 255, 255, 0.5);
-    /* Asegura que el div no desborde su columna */
+
 }
 
 .section6_right_top .logros {
@@ -67,12 +63,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    /* Centra el contenido dentro del div */
     font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
     font-size: 1.2rem;
     width: 100%;
-    /* Asegura que el contenido ocupe todo el ancho disponible */
+
 }
 
 @media (max-width:768px) {

@@ -14,8 +14,8 @@
 .section9_left_top{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
     background-color: white;
     color:#faa134;
     padding-left: 1rem;

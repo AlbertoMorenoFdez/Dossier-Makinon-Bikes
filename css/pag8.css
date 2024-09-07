@@ -54,7 +54,6 @@
 .section8_bottom_left {
     display: flex;
     flex-direction: column;
-    font-weight: bold;
     font-size: 3rem;
     margin-left: 1rem;
 }

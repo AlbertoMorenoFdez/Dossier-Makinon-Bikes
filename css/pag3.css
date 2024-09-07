@@ -48,17 +48,25 @@
     justify-content: center;
 }
 
-.section3_right_bottom .conclusion img {
+.section3_right_bottom img {
     width: 20%;
     height: 20%;
     object-fit: fill;
     object-position: center;
+    transform: rotate(180deg);
 }
+.section3_right_bottom img.in-viewport {
+    transition: transform 1s ease-in-out;
+    transform: rotate(0deg);
+}
+
+
 
 @media (max-width: 768px) {
     .section3 {
-        grid-template-columns: 1fr;
-        gap: 0;
+        display: flex;
+        flex-direction: column;
+        height: auto;
     }
 
     .section3_right .titulo {
@@ -71,9 +79,7 @@
 
     .section3_right_bottom .conclusion {
         font-size: 1.5rem;
-
         flex-direction: column;
-
         text-align: center;
 
     }

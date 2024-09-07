@@ -16,10 +16,11 @@
     <link rel="stylesheet" href="css/pag8.css">
     <link rel="stylesheet" href="css/pag9.css">
     <link rel="stylesheet" href="css/pag10.css">
+    <link rel="stylesheet" href="css/pag11.css">
     <link rel="icon" href="./images/logo_sin_fondo.gif">
     <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
-
+    <script src="js/script.js" defer></script>
 </head>
 
 <body>
@@ -48,6 +49,8 @@
     </section>
     <hr />
 
+    <section class="parallax"></section>
+
 
     <section class="section2">
         <div class="section2_left">
@@ -73,6 +76,8 @@
         </div>
     </section>
     <hr />
+
+    <section class="parallax2"></section>
 
     <section class="section3">
         <div class="section3_left">
@@ -221,38 +226,38 @@
 
         <div class="section7_container">
             <div class="organigrama">ORGANIGRAMA</div>
-            <div class="presi">
+            <div class="presi div-expandable">
                 <p>Presidente</p>
                 <p>Angel del Río</p>
             </div>
-            <div class="secre">
+            <div class="secre div-expandable">
                 <p>Secretario, Tesorero y responsable de redes</p>
                 <p>Francisco Navarro</p>
             </div>
-            <div class="dirdep2">
+            <div class="dirdep2 div-expandable">
                 <p>Director Deportivo Nivel II</p>
                 <p>Jesús Pérez Priego</p>
             </div>
-            <div class="dirdep3">
+            <div class="dirdep3 div-expandable">
                 <p>Director Deportivo Nivel III</p>
                 <p>Antonio Perea</p>
             </div>
-            <div class="mtbnac">
+            <div class="mtbnac div-expandable">
                 <p>Equipo competición MTB Nacional</p>
                 <p>(10 integrantes)</p>
                 <p>Jesús Pérez Priego</p>
             </div>
-            <div class="mtband">
+            <div class="mtband div-expandable">
                 <p>Equipo competición MTB Andalucía</p>
                 <p>(15 integrantes)</p>
                 <p>Antonio Perea</p>
             </div>
-            <div class="femnac">
+            <div class="femnac div-expandable">
                 <p>Equipo competición Femenino Nacional y Andaluz</p>
                 <p>(10 integrantes)</p>
                 <p>Antonio Perea</p>
             </div>
-            <div class="club">
+            <div class="club div-expandable">
                 <p>Club Makinon Bikes</p>
                 <p>100 socios</p>
             </div>
@@ -267,8 +272,10 @@
         </div>
         <div class="section8_bottom">
             <div class="section8_bottom_left">
-                <p>RECURSOS Y</p>
-                <p>EQUIPAMIENTO</p>
+                <div class="titulo">
+                    <p>RECURSOS Y</p>
+                    <p>EQUIPAMIENTO</p>
+                </div>
             </div>
             <div class="section8_bottom_center">
                 <ul>
@@ -430,7 +437,12 @@
     </section>
     <hr />
 
-    <section class="section11"> </section>
+    <section class="section11">
+        <div class="video_container">
+            <video autoplay muted loop>
+                <source src="./videos/video_calentamiento.mp4" type="video/mp4">
+        </div>
+    </section>
 
 
 

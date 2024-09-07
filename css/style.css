@@ -11,19 +11,43 @@
     font-family: 'Port';
     src: url('../fonts/Port\ Condensed-normal-400-100.otf') format('opentype');
 }
-body{
+
+body {
     background-color: #f0f0f0;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-display:Flex;
-flex-direction:column;
-    
+    display: Flex;
+    flex-direction: column;
+
 }
+
+.parallax,
+.parallax2 {
+    min-height: 30vh;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.parallax{
+    background-image: url("../images/salo_ok.webp");
+}
+
+.parallax2{
+    background-image: url("../images/curro_saltarin.webp");
+}
+
 
 
 footer {
     margin: 0;
     padding: 0;
     background-color: white;
+}
+
+.titulo{
+    font-weight: bold;
 }
