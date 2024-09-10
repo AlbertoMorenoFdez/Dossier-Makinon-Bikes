@@ -69,6 +69,20 @@
 
 }
 
+@media(max-width:1200px) {
+    .section6_left_top .titulo {
+        padding: 1rem;
+    }
+
+    .section6_left_bottom .nombre_corredor {
+        font-size: 3rem;
+    }
+
+    .section6_right_top .logros {
+        font-size: 1rem;
+    }
+}
+
 @media (max-width:768px) {
     .section6 {
         grid-template-columns: 1fr;

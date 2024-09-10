@@ -19,15 +19,15 @@
     grid-area: area1;
     display: flex;
     justify-content: center;
-    align-items:flex-start;
+    align-items: flex-start;
     margin-top: 0.5rem;
 }
 
 .section5_left_top img {
     width: 80%;
     height: auto;
-    object-fit: cover;
-    object-position:top;
+    object-fit: contain;
+    object-position: top;
 }
 
 .section5_left_center {
@@ -41,13 +41,13 @@
     grid-area: area7;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .section5_left_bottom img {
     width: 80%;
-    height: auto;
-    object-fit: cover;
+    height: 80%;
+    object-fit: contain;
     object-position: center;
 }
 
@@ -72,7 +72,7 @@
     align-items: center;
     color: white;
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 
 }
 
@@ -85,10 +85,10 @@
 }
 
 .section5_middle_bottom img {
-    width: 50%;
-    height: auto;
+    width: 60%;
+    height: 80%;
     object-fit: contain;
-    object-position: flex-start;
+    object-position: center;
 }
 
 /* Estilos para las imágenes y contenedores de la derecha */
@@ -96,7 +96,7 @@
     grid-area: area3;
     display: flex;
     justify-content: center;
-    align-items:flex-start;
+    align-items: flex-start;
     margin-top: 0.5rem;
 }
 
@@ -118,14 +118,44 @@
     grid-area: area9;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .section5_right_bottom img {
     width: 80%;
-    height: auto;
-    object-fit: cover;
+    height: 80%;
+    object-fit: contain;
     object-position: center;
+}
+
+@media(max-width: 1200px) {
+    .section5 {
+        height: auto;
+    }
+
+    .section5_middle_top {
+        font-size: 2.5rem;
+    }
+
+    .section5_middle_center {
+        font-size: 1.2rem;
+    }
+
+    .section5_middle_bottom img {
+        width: 40%;
+    }
+
+    .section5_left_bottom,
+    .section5_middle_bottom,
+    .section5_right_bottom {
+        align-items: flex-start;
+    }
+}
+
+@media(max-width:992px) {
+    .section5_middle_top{
+        text-align: center;
+    }
 }
 
 @media (max-width: 768px) {
@@ -145,9 +175,9 @@
     }
 
     .section5 img {
-        width: 100%;   
+        width: 100%;
         height: auto;
-        
+
     }
 
     .section5_left_top img,

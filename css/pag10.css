@@ -26,6 +26,7 @@
     display:flex;
     flex-direction: column;
     justify-content: space-around;
+    padding: 0.5rem;
 }
 
 .section10_center .titulo{
@@ -48,11 +49,32 @@
     margin: 0.5rem;
 }
 
+@media(max-width: 1200px){
+    
+    .section10_center .titulo{
+        font-size: 2.5rem;
+    }
+    .section10_center .contenido{
+        font-size: 1.3rem;
+    }
+}
+
+@media(max-width: 992px){
+    
+    .section10_center .titulo{
+        font-size: 2.3rem;
+    }
+    .section10_center .contenido{
+        font-size: 1.1rem;
+    }
+}
+
 @media (max-width: 768px) {
     .section10{
         grid-template-columns: 1fr;
         height: auto;
     }
+
     .section10_center .titulo{
         font-size: 2rem;
     }

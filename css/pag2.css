@@ -3,22 +3,19 @@
     height: 100vh;
     display: grid;
     grid-template-columns: 1.5fr 2.5fr;
-    
-
 }
 
 .section2_left {
     grid-column: 1;
     display: flex;
     justify-content: center;
-    align-items: center;
-    
+    align-items: center;  
 }
 
 .section2_left img {
     width: 100%;
     height: 100%;
-    object-fit: fill;
+    object-fit: cover;
     object-position: center;
 }
 
@@ -69,6 +66,14 @@
     margin: 1rem;
     text-align: justify;
 }
+
+@media (max-width: 1200px) {
+    .section2 {
+        height: auto;
+    }
+}
+
+
 
 @media (max-width: 768px) {
     .section2 {

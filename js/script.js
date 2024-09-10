@@ -18,7 +18,6 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 /*Funcion que nos permite aumentar el tamaño de una clase cuando pulsamos sobre ella*/
-
 document.addEventListener('DOMContentLoaded', function () {
     const expandableDivs = document.querySelectorAll('.div-expandable');
 
@@ -43,5 +42,27 @@ document.addEventListener('DOMContentLoaded', function () {
     expandableDivs.forEach(div => {
         div.addEventListener('click', handleClick);
         observer.observe(div);
+    });
+});
+
+/* Funcion que nos permite */
+document.addEventListener('DOMContentLoaded', function () {
+    const videoTexts = document.querySelectorAll('.video-text');
+
+    videoTexts.forEach(span => {
+        const videoSrc = span.getAttribute('data-video');
+        const videoElement = document.createElement('video');
+        videoElement.src = `videos/${videoSrc}`;
+        videoElement.autoplay = true;
+        videoElement.muted = true;
+        videoElement.loop = true;
+        videoElement.style.position = 'absolute';
+        videoElement.style.top = '0';
+        videoElement.style.left = '0';
+        videoElement.style.width = '100%';
+        videoElement.style.height = '100%';
+        videoElement.style.objectFit = 'cover';
+        videoElement.style.zIndex = '-1';
+        span.appendChild(videoElement);
     });
 });

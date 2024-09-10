@@ -49,6 +49,7 @@
 .section8_bottom > * {
     position: relative;
     z-index: 2;
+    padding: 1rem;
 }
 
 .section8_bottom_left {
@@ -60,6 +61,39 @@
 
 .section8 li {
     font-size: 1.6rem;
+}
+
+@media(max-width:1200px){
+    .section8_bottom_left{
+        font-size: 2.5rem;
+    }
+
+    .section8 li{
+        font-size: 1.5rem;
+    }
+}
+
+@media(max-width:992px){
+    .section8{
+        height: auto;
+    }
+
+    .section8_bottom{
+        flex-direction: column;
+    }
+
+    .section8_bottom_left{
+        font-size: 2.3rem;
+    }
+
+    .section8_bottom_center, .section8_bottom_right{
+        width: 80%;
+        
+    }
+
+    .section8 li{
+        font-size: 1.2rem;
+    }
 }
 
 @media(max-width:768px){

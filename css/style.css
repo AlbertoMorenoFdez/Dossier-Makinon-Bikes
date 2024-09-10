@@ -23,8 +23,8 @@ body {
 }
 
 .parallax,
-.parallax2 {
-    min-height: 30vh;
+.parallax2, .parallax3 {
+    min-height: 50vh;
 
     background-attachment: fixed;
     background-position: center;
@@ -33,21 +33,18 @@ body {
 }
 
 .parallax{
-    background-image: url("../images/salo_ok.webp");
+    background-image: url("../images/buque_insignia.JPG");
 }
 
 .parallax2{
     background-image: url("../images/curro_saltarin.webp");
 }
 
-
-
-footer {
-    margin: 0;
-    padding: 0;
-    background-color: white;
+.parallax3{
+    background-image: url("../images/salo_ok.webp");
 }
 
 .titulo{
     font-weight: bold;
 }
+
