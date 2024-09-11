@@ -22,10 +22,20 @@ body {
 
 }
 
-.parallax,
-.parallax2, .parallax3 {
-    min-height: 50vh;
+.titulo{
+    font-weight: bold;
+}
 
+.parallax,
+.parallax2, 
+.parallax3, 
+.parallax4,
+.parallax5,
+.parallax6,
+.parallax7,
+.parallax8,
+.parallax9{
+    min-height: 50vh;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -44,7 +54,27 @@ body {
     background-image: url("../images/salo_ok.webp");
 }
 
-.titulo{
-    font-weight: bold;
+.parallax4{
+    background-image: url("../images/cazorla.jpg");
 }
 
+
+.parallax5{
+    background-image: url("../images/podium_2.jpeg");
+}
+
+.parallax6{
+    background-image: url("../images/subida_road.jpg");
+}
+
+.parallax7{
+    background-image: url("../images/curro_jerez.webp");
+}
+
+.parallax8{
+    background-image: url("../images/equipacion.png");
+}
+
+.parallax9{
+    background-image: url("../images/carpa.jpeg");
+}

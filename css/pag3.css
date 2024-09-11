@@ -28,21 +28,23 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background-color: #faa134;
+    background-color: black;
 }
 
 .section3_right .titulo {
     font-family: 'Montserrat', sans-serif;
     font-size: 3rem;
     margin: 0.5rem;
+    color: #faa134
 }
 
 .section3_right_medium .contenido {
     list-style-type: disc;
     margin: 0.5em;
-    padding-left: 20px;
+    padding: 1rem;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
+    color:#faa134;
 }
 
 .section3_right_bottom .conclusion {
