@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function () {
     videoTexts.forEach(span => {
         const videoSrc = span.getAttribute('data-video');
         const videoElement = document.createElement('video');
-        videoElement.src = `videos/${videoSrc}`;
+        videoElement.src = videoSrc;
         videoElement.autoplay = true;
         videoElement.muted = true;
         videoElement.loop = true;
